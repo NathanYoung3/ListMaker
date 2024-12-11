@@ -35,7 +35,7 @@ public class Main {
     }
 
     public static void Delete(Scanner scan, ArrayList<String> list){
-        list.remove(InputHelper.getRangedInt(scan, "What is the index of the list item would you like to delete? (0 - " + list.size() + ")", 1, list.size()));
+        list.remove(InputHelper.getRangedInt(scan, "What is the index of the list item would you like to delete? (0 - " + (list.size() - 1) + ")", 0, list.size() - 1));
     }
 
     public static void Print(ArrayList<String> list){
