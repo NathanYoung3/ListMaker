@@ -47,5 +47,9 @@ public class Main {
 
     public static void Quit(Scanner scan, boolean quit){
         quit = InputHelper.getYNConfirm(scan, "Are you sure you want to quit? [Y/N]");
+
+        if (quit) {
+            System.exit(0);
+        }
     }
 }
